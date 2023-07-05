@@ -1,0 +1,261 @@
+.section, .header, .product {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.section__content, .header__content {
+  max-width: 1200px;
+  width: 100%;
+}
+@media all and (width < 1440px) {
+  .section__content, .header__content {
+    max-width: 1100px;
+  }
+}
+@media all and (width < 1260px) {
+  .section__content, .header__content {
+    max-width: 900px;
+  }
+}
+@media all and (width < 1000px) {
+  .section__content, .header__content {
+    max-width: 700px;
+  }
+}
+@media all and (width < 620px) {
+  .section__content, .header__content {
+    max-width: 500px;
+  }
+}
+
+.section__double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media all and (width < 1260px) {
+  .section__double {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  background-color: #454545;
+}
+
+.header__content {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.header__block {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.header__icon {
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.header__icon:hover {
+  opacity: 0.7;
+}
+.header__icon:active {
+  opacity: 0.3;
+}
+
+.header__link {
+  transition: opacity 0.7s;
+  cursor: pointer;
+  color: #DADADA;
+  font-size: 12px;
+}
+.header__link:hover {
+  opacity: 0.7;
+}
+.header__link:active {
+  opacity: 0.3;
+}
+
+.product__content {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  align-content: baseline;
+}
+
+.product__title {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.product__descriptions {
+  font-size: 28px;
+}
+
+.product__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.product__action:hover {
+  opacity: 0.7;
+}
+.product__action:active {
+  opacity: 0.3;
+}
+
+.product__link {
+  color: #0066cc;
+  position: relative;
+  padding-right: 15px;
+}
+.product__link::after {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 15px;
+  background-image: url("/svg/arrow_right.svg");
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7px);
+}
+
+.product--big {
+  max-height: 700px;
+  height: 100vh;
+  background-position: bottom center;
+}
+@media all and (width < 1000px) {
+  .product--big {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product--small {
+  max-height: 580px;
+  height: 100vh;
+  background-position: bottom center;
+}
+@media all and (width < 1000px) {
+  .product--small {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product--dark .product__title, .product--dark .product__descriptions {
+  color: #f5f5f7;
+  background-color: black;
+}
+
+.product--top .product__content {
+  align-content: flex-start;
+}
+
+.product--bottom .product__content {
+  align-content: flex-end;
+}
+
+.product--light {
+  background-color: #fafafa;
+}
+.product--light .product__title, .product--light .product__descriptions {
+  color: #1d1d1f;
+}
+
+.product--iphone-pro {
+  background-image: url("/img/iphone_pro.png");
+}
+
+.product--iphone {
+  background-image: url("/img/iphone.png");
+}
+
+.product--iwatch {
+  background-image: url("/img/iwatch.png");
+}
+
+.product--trade_in {
+  background-image: url("/img/trade_in.png");
+}
+
+.product--conference {
+  background-image: url("/img/conference.png");
+}
+
+.product--ipad {
+  background-image: url("/img/ipad.png");
+}
+
+.product--small_business {
+  background-image: url("/img/small_business.png");
+}
+
+.product--gift {
+  background-image: url("/img/gift.png");
+}
+
+.product--card {
+  background-image: url("/img/card.png");
+}
+
+.product--small .product__title {
+  font-size: 40px;
+}
+.product--small .product__descriptions {
+  font-size: 20px;
+}
+
+.footer__page {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 39px 0;
+  gap: 10px;
+}
+
+.footer__content {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer__nav_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__title {
+  color: black;
+}
+
+.footer__link {
+  color: #424245;
+  gap: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
